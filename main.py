@@ -54,7 +54,7 @@ def create_post(post: Post):
     # return {"new_post": f
     # "title:{payload['title']}  content:{payload['content']}"} 
 
-@app.get("/posts/{id}")
+@app.get("/posts/{id}" )   
 def get_post(id: int):
     post = find_post(id)
     print(post)
